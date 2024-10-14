@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Lab work 1 | 338790</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+    Author: Bragin Roman P3216
+    <br><br>
+</header>
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <td>
+            <table border="0" cellpadding="10" cellspacing="0">
+                <tr>
+                    <td>
+                        <h3>Fill in the fields and check by clicking on the button</h3>
+                        * 2 decimal places
+                        <br><br>
+                        * for non-integers, use - "."
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="y">Select X :</label>
+                        <input type="text" id="x" placeholder="from [-3;3]" min="-3" max="5" step="0.1"
+                               style="width: 85px;">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="x">Select Y :</label>
+                        <input type="radio" name="option" value="-2"> -2 |
+                        <input type="radio" name="option" value="-1.5"> -1.5 |
+                        <input type="radio" name="option" value="-1"> -1 |
+                        <input type="radio" name="option" value="-0.5"> -0.5 |
+                        <input type="radio" name="option" value="0"> 0 |
+                        <input type="radio" name="option" value="0.5"> 0.5 |
+                        <input type="radio" name="option" value="1"> 1 |
+                        <input type="radio" name="option" value="1.5"> 1.5 |
+                        <input type="radio" name="option" value="2"> 2 |
+                        <input type="radio" name="option" value="5"> 5 |
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="r">Select R :</label>
+                        <input type="text" id="r" placeholder="from [2;5]" min="2" max="5" step="0.1"
+                               style="width: 85px;">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="submitForm()">Check</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="result"></div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <canvas id="coordinatePlane" width="300" height="300"></canvas>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<script src="scripts.js"></script>
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <td>Request time</td>
+        <td>Running time</td>
+        <td>Coordinate X</td>
+        <td>Coordinate Y</td>
+        <td>Radius length</td>
+        <td>Result</td>
+    </tr>
+</table>
+
+</body>
+
+</html>
